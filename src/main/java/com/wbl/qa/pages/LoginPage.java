@@ -15,21 +15,28 @@ public class LoginPage  extends TestBase{
 	
  
 
-@FindBy(name="email")
+@FindBy(id="ap_email")
  WebElement email;
- 
 
-@FindBy(name="password")
+
+@FindBy(id="ap-credential-autofill-hint")
 WebElement password;
 
-@FindBy(id="signInSubmit")
+@FindBy(id="nav-link-accountList")
 WebElement SignIn;
+
+@FindBy(id="continue")
+WebElement cont;
+
+@FindBy(id="signInSubmit")
+WebElement SignIn2;
 
 @FindBy(id="createAccountSubmit")
 WebElement SignUp;
 
-@FindBy(xpath="\"/html//input[@id='ap_email']\"")
+@FindBy(xpath="\"//div[@id='nav-logo']/a/span[1]\"")
 WebElement image;
+//@FindBy()
 //Initializing the page Objects/Elements
 public  LoginPage() throws IOException {
 	PageFactory.initElements(driver, this);
@@ -41,14 +48,27 @@ public  LoginPage() throws IOException {
  public boolean validateAmazonLogo() {
 	 return image.isDisplayed();
  }
-  public HomePage login(String un,String pwd) throws IOException {
-	  email.sendKeys(un);
-	  password.sendKeys(pwd);
-	  SignIn.click();
-	  return new HomePage();
-  }
+  
+ public void signInClick() {
+	 SignIn.click();
+	 
+ }
+ /*public void contClick() {
+	 cont.click();
+	 
+ }
+ public void signIn2Click() {
+	 SignIn2.click();
+	 
+ }*/
  
- 
+ /*public HomePage login(String un,String pwd) throws IOException {
+ email.sendKeys(un);
+ contClick();
+ password.sendKeys(pwd);
+ signIn2Click();
+ return new HomePage();
+}*/
 }
 
 

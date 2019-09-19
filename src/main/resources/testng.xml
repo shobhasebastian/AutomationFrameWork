@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding ="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="SeleniumAutomationFrameWorkShobha"  >
+  <test name="SeleniumTestCasesforAmazon" >
+    <classes>
+        <class name="com.wbl.qa.testcases.LoginPageTest" />
+       <class name="com.wbl.qa.testcases.CredentialPageTest" />
+       <class name="com.wbl.qa.testcases.HomePageTest" />
+       
+    </classes>
+  </test>
+ 
+  
+</suite>

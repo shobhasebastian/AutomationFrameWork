@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.wbl.qa.testcases.LoginPageTest">
+      <class name="com.wbl.qa.testcases.CredentialPageTest">
         <methods>
-          <include name="setUp"/>
           <include name="loginTest"/>
-          <include name="amazonLogoImageTest"/>
-          <include name="loginPageTitleTest"/>
         </methods>
-      </class> <!-- com.wbl.qa.testcases.LoginPageTest -->
+      </class> <!-- com.wbl.qa.testcases.CredentialPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -37,7 +37,7 @@ public class TestBase {
 	public static void initialization() {
 		String browserName=prop.getProperty("browser");
 		if(browserName.equals("Chrome")) {
-			System.setProperty("WebDriver.chrome.driver", "C:/Users/dell/Desktop/Shobha/WhiteboxQA/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:/Users/dell/Desktop/Shobha/WhiteboxQA/chromedriver.exe");
 			driver=new ChromeDriver();
 		}
 		driver.manage().window().maximize();
